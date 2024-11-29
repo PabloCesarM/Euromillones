@@ -10,13 +10,15 @@
 
     <TextView
         android:id="@+id/tv1Numero"
-        android:layout_width="320dp"
-        android:layout_height="59dp"
-        android:text="01 02 03 04 05"
+        android:layout_width="272dp"
+        android:layout_height="53dp"
+        android:background="@android:color/system_accent1_100"
+        android:text="0102030405"
+        android:textColor="@color/material_dynamic_neutral_variant20"
         android:textSize="45sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintHorizontal_bias="0.762"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.724" />
@@ -40,7 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
-        android:text="ACEPTAR"
+        android:text="COMPRAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.226"
@@ -63,81 +65,17 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="40dp"
-        android:layout_height="36dp"
-        app:srcCompat="@drawable/star"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="377dp" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="40dp"
-        android:layout_height="36dp"
-        app:srcCompat="@drawable/star"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="377dp" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="40dp"
-        android:layout_height="36dp"
-        app:srcCompat="@drawable/star"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="377dp" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="40dp"
-        android:layout_height="36dp"
-        app:srcCompat="@drawable/star"
-        tools:layout_editor_absoluteX="201dp"
-        tools:layout_editor_absoluteY="420dp" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="40dp"
-        android:layout_height="36dp"
-        app:srcCompat="@drawable/star"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="420dp" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="40dp"
-        android:layout_height="36dp"
-        app:srcCompat="@drawable/star"
-        tools:layout_editor_absoluteX="303dp"
-        tools:layout_editor_absoluteY="420dp" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="40dp"
-        android:layout_height="36dp"
-        app:srcCompat="@drawable/star"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="420dp" />
-
-    <ImageView
         android:id="@+id/imageView14"
         android:layout_width="40dp"
         android:layout_height="36dp"
         android:layout_marginTop="24dp"
         app:layout_constraintBottom_toTopOf="@+id/btnElegirNum"
         app:layout_constraintEnd_toStartOf="@+id/tv2Reintegro"
-        app:layout_constraintHorizontal_bias="0.683"
+        app:layout_constraintHorizontal_bias="0.805"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv1Numero"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="40dp"
-        android:layout_height="36dp"
-        app:srcCompat="@drawable/star"
-        tools:layout_editor_absoluteX="303dp"
-        tools:layout_editor_absoluteY="377dp" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -145,15 +83,47 @@
         android:layout_height="36dp"
         app:srcCompat="@drawable/star"
         tools:layout_editor_absoluteX="201dp"
-        tools:layout_editor_absoluteY="377dp" />
+        tools:layout_editor_absoluteY="395dp" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/imageView9"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        app:srcCompat="@drawable/star"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        app:srcCompat="@drawable/star"
+        tools:layout_editor_absoluteX="303dp"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        app:srcCompat="@drawable/star"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="438dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
         android:layout_width="40dp"
         android:layout_height="36dp"
         app:srcCompat="@drawable/star"
         tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="377dp" />
+        tools:layout_editor_absoluteY="438dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        app:srcCompat="@drawable/star"
+        tools:layout_editor_absoluteX="303dp"
+        tools:layout_editor_absoluteY="438dp" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -161,7 +131,15 @@
         android:layout_height="36dp"
         app:srcCompat="@drawable/star"
         tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="420dp" />
+        tools:layout_editor_absoluteY="438dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        app:srcCompat="@drawable/star"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="395dp" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -169,7 +147,31 @@
         android:layout_height="36dp"
         app:srcCompat="@drawable/star"
         tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="420dp" />
+        tools:layout_editor_absoluteY="438dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        app:srcCompat="@drawable/star"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        app:srcCompat="@drawable/star"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="438dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        app:srcCompat="@drawable/star"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="395dp" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -182,5 +184,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.071"
         app:srcCompat="@drawable/icons8_lotto_50" />
+
+    <TextView
+        android:id="@+id/tvNumDosPuntos"
+        android:layout_width="67dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="28dp"
+        android:text="Nº:"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView14"
+        app:layout_constraintEnd_toStartOf="@+id/tv1Numero"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
