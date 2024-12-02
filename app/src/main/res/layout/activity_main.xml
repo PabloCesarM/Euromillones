@@ -18,7 +18,7 @@
         android:textSize="45sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintHorizontal_bias="0.683"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.764"
@@ -78,7 +78,7 @@
         app:srcCompat="@drawable/star" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imbStart12"
         android:layout_width="40dp"
         android:layout_height="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -90,7 +90,7 @@
         app:srcCompat="@drawable/star" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/imbStart3"
         android:layout_width="40dp"
         android:layout_height="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -102,19 +102,19 @@
         app:srcCompat="@drawable/star" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/imbStart5"
         android:layout_width="40dp"
         android:layout_height="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toEndOf="@+id/imbStart4"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.594"
         app:srcCompat="@drawable/star" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/imbStart4"
         android:layout_width="40dp"
         android:layout_height="36dp"
         android:layout_marginStart="24dp"
@@ -127,7 +127,7 @@
         app:srcCompat="@drawable/star" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imbStart11"
         android:layout_width="40dp"
         android:layout_height="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -151,12 +151,28 @@
         app:layout_constraintVertical_bias="0.591" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imbStart7"
         android:layout_width="40dp"
         android:layout_height="36dp"
-        app:srcCompat="@drawable/star"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="456dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.656"
+        app:srcCompat="@drawable/star" />
+
+    <ImageView
+        android:id="@+id/imbStart1"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.594"
+        app:srcCompat="@drawable/star" />
 
     <TextView
         android:id="@+id/tvstar3"
@@ -183,23 +199,31 @@
         app:layout_constraintVertical_bias="0.594" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imbStart10"
         android:layout_width="40dp"
         android:layout_height="36dp"
-        app:srcCompat="@drawable/star"
-        tools:layout_editor_absoluteX="201dp"
-        tools:layout_editor_absoluteY="456dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.656"
+        app:srcCompat="@drawable/star" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imbStart9"
         android:layout_width="40dp"
         android:layout_height="36dp"
-        app:srcCompat="@drawable/star"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="456dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.656"
+        app:srcCompat="@drawable/star" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/imbStart2"
         android:layout_width="40dp"
         android:layout_height="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -211,7 +235,7 @@
         app:srcCompat="@drawable/star" />
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/imbStart6"
         android:layout_width="40dp"
         android:layout_height="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -223,12 +247,16 @@
         app:srcCompat="@drawable/star" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imbStart8"
         android:layout_width="40dp"
         android:layout_height="36dp"
-        app:srcCompat="@drawable/star"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="456dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.656"
+        app:srcCompat="@drawable/star" />
 
     <ImageButton
         android:id="@+id/imageButton"
