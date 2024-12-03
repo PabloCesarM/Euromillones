@@ -1,4 +1,8 @@
 package com.example.euromillones;
 
-public class PInicial {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class PInicial extends AppCompatActivity {
+
+
 }
