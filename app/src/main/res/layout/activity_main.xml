@@ -323,7 +323,7 @@
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="@+id/btnBorrar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintHorizontal_bias="0.672"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.404"
@@ -479,7 +479,7 @@
         app:srcCompat="@drawable/bola25" />
 
     <ImageButton
-        android:id="@+id/imageButton17"
+        android:id="@+id/imb46"
         android:layout_width="69dp"
         android:layout_height="60dp"
         android:backgroundTint="@color/material_dynamic_tertiary80"
@@ -524,7 +524,7 @@
         app:srcCompat="@drawable/bola21" />
 
     <ImageButton
-        android:id="@+id/imageButton15"
+        android:id="@+id/imb36"
         android:layout_width="69dp"
         android:layout_height="60dp"
         android:backgroundTint="@color/material_dynamic_tertiary80"
@@ -536,7 +536,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.561"
-        app:srcCompat="@drawable/bola36" />
+        app:srcCompat="@drawable/bola36"
+        tools:onClick="agregarNumero" />
 
     <ImageButton
         android:id="@+id/imb02"
@@ -683,7 +684,7 @@
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintHorizontal_bias="0.681"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.326"
@@ -705,7 +706,7 @@
         app:srcCompat="@drawable/bola26" />
 
     <ImageButton
-        android:id="@+id/imageButton16"
+        android:id="@+id/imb41"
         android:layout_width="69dp"
         android:layout_height="60dp"
         android:backgroundTint="@color/material_dynamic_tertiary80"
@@ -728,10 +729,10 @@
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.403"
+        app:layout_constraintVertical_bias="0.4"
         app:srcCompat="@drawable/bola28" />
 
     <ImageButton
@@ -778,5 +779,88 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.248"
         app:srcCompat="@drawable/bola20" />
+
+    <ImageButton
+        android:id="@+id/imb30"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.402"
+        app:srcCompat="@drawable/bola30" />
+
+    <ImageButton
+        android:id="@+id/imb32"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481"
+        app:srcCompat="@drawable/bola32" />
+
+    <ImageButton
+        android:id="@+id/imb33"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481"
+        app:srcCompat="@drawable/bola33" />
+
+    <ImageButton
+        android:id="@+id/imb34"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.678"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481"
+        app:srcCompat="@drawable/bola34" />
+
+    <ImageButton
+        android:id="@+id/imb35"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481"
+        app:srcCompat="@drawable/bola35" />
+
+    <ImageButton
+        android:id="@+id/imb37"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56"
+        app:srcCompat="@drawable/bola37" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
