@@ -21,13 +21,14 @@ public class MainActivity extends AppCompatActivity {
 
     // todos los elementos que hay que declarar
     // TEXTVIEW
-    private TextView tv1Numero;
+    private TextView tv1Numero, tv2Reintegro;
 
     // IMAGEBUTTON
-    private ImageButton imb01, imb02, imb03;
-
+    private ImageButton imb01, imb02, imb03, imb04, imb05, imb06, imb07, imb08, imb09, imb10, imb11, imb12, imb13, imb14, imb15, imb16, imb17, imb18, imb19, imb20;
+    private ImageButton imb21, imb22, imb23, imb24, imb25, imb26, imb27, imb28, imb29, imb30, imb31, imb32, imb33, imb34, imb35, imb36, imb37, imb38, imb39, imb40;
+    private ImageButton imb41, imb42, imb43, imb44, imb45, imb46, imb47, imb48, imb49, imb50;
     //BUTTON
-    private Button btnElegirNum;
+    private Button btnElegirNum, btnBorrar, btnMisBoletos;
 
 
     @Override
