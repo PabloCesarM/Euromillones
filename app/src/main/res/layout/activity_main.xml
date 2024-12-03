@@ -165,7 +165,7 @@
         app:layout_constraintVertical_bias="0.792" />
 
     <ImageView
-        android:id="@+id/imbStart2"
+        android:id="@+id/imbStar2"
         android:layout_width="40dp"
         android:layout_height="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -177,7 +177,7 @@
         app:srcCompat="@drawable/star" />
 
     <ImageView
-        android:id="@+id/imbStart1"
+        android:id="@+id/imbStar1"
         android:layout_width="40dp"
         android:layout_height="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -283,17 +283,333 @@
         app:layout_constraintVertical_bias="0.994" />
 
     <ImageButton
-        android:id="@+id/imb07"
+        android:id="@+id/imb19"
         android:layout_width="69dp"
         android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintHorizontal_bias="0.675"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08"
+        app:layout_constraintVertical_bias="0.248"
+        app:srcCompat="@drawable/bola19" />
+
+    <ImageButton
+        android:id="@+id/imb11"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172"
+        app:srcCompat="@drawable/bola11" />
+
+    <ImageButton
+        android:id="@+id/imb29"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBorrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.404"
+        app:srcCompat="@drawable/bola29" />
+
+    <ImageButton
+        android:id="@+id/imb18"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.248"
+        app:srcCompat="@drawable/bola18" />
+
+    <ImageButton
+        android:id="@+id/imb31"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.482"
+        app:srcCompat="@drawable/bola31" />
+
+    <ImageButton
+        android:id="@+id/imb14"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172"
+        app:srcCompat="@drawable/bola14" />
+
+    <ImageButton
+        android:id="@+id/imb15"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172"
+        app:srcCompat="@drawable/bola15" />
+
+    <ImageButton
+        android:id="@+id/imb09"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093"
+        app:srcCompat="@drawable/bola09" />
+
+    <ImageButton
+        android:id="@+id/imb08"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093"
+        app:srcCompat="@drawable/bola08"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imb07"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093"
         app:srcCompat="@drawable/bola07" />
+
+    <ImageButton
+        android:id="@+id/imb03"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#018786"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/bola03" />
+
+    <ImageButton
+        android:id="@+id/imb13"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172"
+        app:srcCompat="@drawable/bola13" />
+
+    <ImageButton
+        android:id="@+id/imb25"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326"
+        app:srcCompat="@drawable/bola25" />
+
+    <ImageButton
+        android:id="@+id/imageButton17"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.719"
+        app:srcCompat="@drawable/bola46" />
+
+    <ImageButton
+        android:id="@+id/imb23"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326"
+        app:srcCompat="@drawable/bola23" />
+
+    <ImageButton
+        android:id="@+id/imb21"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326"
+        app:srcCompat="@drawable/bola21" />
+
+    <ImageButton
+        android:id="@+id/imageButton15"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.561"
+        app:srcCompat="@drawable/bola36" />
+
+    <ImageButton
+        android:id="@+id/imb02"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/bola02" />
+
+    <ImageButton
+        android:id="@+id/imb06"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093"
+        app:srcCompat="@drawable/bola06" />
+
+    <ImageButton
+        android:id="@+id/imb10"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093"
+        app:srcCompat="@drawable/bola10" />
+
+    <ImageButton
+        android:id="@+id/imb27"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403"
+        app:srcCompat="@drawable/bola27" />
+
+    <ImageButton
+        android:id="@+id/imb05"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/bola05" />
 
     <ImageButton
         android:id="@+id/imb01"
@@ -301,405 +617,164 @@
         android:layout_height="60dp"
         android:backgroundTint="@color/material_dynamic_tertiary80"
         android:cropToPadding="false"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.004"
-        app:srcCompat="@drawable/bola01" />
-
-    <ImageButton
-        android:id="@+id/imb05"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.883"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.004"
-        app:srcCompat="@drawable/bola05" />
-
-    <ImageButton
-        android:id="@+id/imb06"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
+        android:onClick="agregarNumero"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.067"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.081"
-        app:srcCompat="@drawable/bola06" />
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/bola01" />
 
     <ImageButton
         android:id="@+id/imb16"
         android:layout_width="69dp"
         android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.236"
+        app:layout_constraintVertical_bias="0.248"
         app:srcCompat="@drawable/bola16" />
 
     <ImageButton
         android:id="@+id/imb04"
         android:layout_width="69dp"
         android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.672"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.004"
-        app:srcCompat="@drawable/bola04" />
-
-    <ImageButton
-        android:id="@+id/imb03"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:backgroundTint="#018786"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.004"
-        app:srcCompat="@drawable/bola03" />
-
-    <ImageButton
-        android:id="@+id/imb18"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.235"
-        app:srcCompat="@drawable/bola18" />
-
-    <ImageButton
-        android:id="@+id/imb13"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.159"
-        app:srcCompat="@drawable/bola13" />
-
-    <ImageButton
-        android:id="@+id/imb08"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08"
-        app:srcCompat="@drawable/bola08" />
-
-    <ImageButton
-        android:id="@+id/imb02"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
         android:backgroundTint="@color/material_dynamic_tertiary80"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.271"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.004"
-        app:srcCompat="@drawable/bola02" />
-
-    <ImageButton
-        android:id="@+id/imb11"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.159"
-        app:srcCompat="@drawable/bola11" />
-
-    <ImageButton
-        android:id="@+id/imb21"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.064"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.312"
-        app:srcCompat="@drawable/bola21" />
-
-    <ImageButton
-        android:id="@+id/imb26"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.064"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39"
-        app:srcCompat="@drawable/bola26" />
-
-    <ImageButton
-        android:id="@+id/imb31"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.064"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.469"
-        app:srcCompat="@drawable/bola31" />
-
-    <ImageButton
-        android:id="@+id/imageButton15"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.067"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.548"
-        app:srcCompat="@drawable/bola36" />
-
-    <ImageButton
-        android:id="@+id/imageButton16"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.067"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.627"
-        app:srcCompat="@drawable/bola41" />
-
-    <ImageButton
-        android:id="@+id/imageButton17"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.706"
-        app:srcCompat="@drawable/bola46" />
-
-    <ImageButton
-        android:id="@+id/imb09"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.675"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08"
-        app:srcCompat="@drawable/bola09" />
-
-    <ImageButton
-        android:id="@+id/imb10"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.885"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08"
-        app:srcCompat="@drawable/bola10" />
-
-    <ImageButton
-        android:id="@+id/imb12"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.269"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.159"
-        app:srcCompat="@drawable/bola12" />
-
-    <ImageButton
-        android:id="@+id/imb14"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.675"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.159"
-        app:srcCompat="@drawable/bola14" />
-
-    <ImageButton
-        android:id="@+id/imb15"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.885"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.159"
-        app:srcCompat="@drawable/bola15" />
-
-    <ImageButton
-        android:id="@+id/imb17"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.269"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.235"
-        app:srcCompat="@drawable/bola17" />
-
-    <ImageButton
-        android:id="@+id/imb19"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.678"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.235"
-        app:srcCompat="@drawable/bola19" />
-
-    <ImageButton
-        android:id="@+id/imb20"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.883"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.235"
-        app:srcCompat="@drawable/bola20" />
-
-    <ImageButton
-        android:id="@+id/imb22"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.266"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.312"
-        app:srcCompat="@drawable/bola22" />
-
-    <ImageButton
-        android:id="@+id/imb23"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.312"
-        app:srcCompat="@drawable/bola23" />
-
-    <ImageButton
-        android:id="@+id/imb24"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
+        android:onClick="agregarNumero"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.669"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.312"
-        app:srcCompat="@drawable/bola24" />
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/bola04" />
 
     <ImageButton
-        android:id="@+id/imb25"
+        android:id="@+id/imb12"
         android:layout_width="69dp"
         android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.883"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.312"
-        app:srcCompat="@drawable/bola25" />
-
-    <ImageButton
-        android:id="@+id/imb28"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39"
-        app:srcCompat="@drawable/bola28" />
-
-    <ImageButton
-        android:id="@+id/imb27"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.266"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39"
-        app:srcCompat="@drawable/bola27" />
+        app:layout_constraintVertical_bias="0.172"
+        app:srcCompat="@drawable/bola12" />
+
+    <ImageButton
+        android:id="@+id/imb24"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326"
+        app:srcCompat="@drawable/bola24" />
+
+    <ImageButton
+        android:id="@+id/imb26"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403"
+        app:srcCompat="@drawable/bola26" />
+
+    <ImageButton
+        android:id="@+id/imageButton16"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64"
+        app:srcCompat="@drawable/bola41" />
+
+    <ImageButton
+        android:id="@+id/imb28"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403"
+        app:srcCompat="@drawable/bola28" />
+
+    <ImageButton
+        android:id="@+id/imb22"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326"
+        app:srcCompat="@drawable/bola22" />
+
+    <ImageButton
+        android:id="@+id/imb17"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.248"
+        app:srcCompat="@drawable/bola17" />
+
+    <ImageButton
+        android:id="@+id/imb20"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.248"
+        app:srcCompat="@drawable/bola20" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
