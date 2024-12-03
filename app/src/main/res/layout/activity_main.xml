@@ -863,4 +863,31 @@
         app:layout_constraintVertical_bias="0.56"
         app:srcCompat="@drawable/bola37" />
 
+    <ImageButton
+        android:id="@+id/imb39"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56"
+        app:srcCompat="@drawable/bola39" />
+
+    <ImageButton
+        android:id="@+id/imb38"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56"
+        app:srcCompat="@drawable/bola38" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
