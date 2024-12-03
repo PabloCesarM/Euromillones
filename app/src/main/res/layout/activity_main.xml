@@ -80,18 +80,6 @@
         app:layout_constraintVertical_bias="0.795"
         app:srcCompat="@drawable/star" />
 
-    <TextView
-        android:id="@+id/tvstar5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.674"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.787" />
-
     <ImageView
         android:id="@+id/imbStart3"
         android:layout_width="40dp"
@@ -103,18 +91,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.795"
         app:srcCompat="@drawable/star" />
-
-    <TextView
-        android:id="@+id/tvstar3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.392"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.782" />
 
     <ImageView
         android:id="@+id/imbStart9"
@@ -152,18 +128,6 @@
         app:layout_constraintVertical_bias="0.857"
         app:srcCompat="@drawable/star" />
 
-    <TextView
-        android:id="@+id/tvstar2"
-        android:layout_width="14dp"
-        android:layout_height="23dp"
-        android:text="2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.251"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.792" />
-
     <ImageView
         android:id="@+id/imbStar2"
         android:layout_width="40dp"
@@ -193,7 +157,6 @@
         android:layout_width="100dp"
         android:layout_height="35dp"
         android:background="@android:color/holo_orange_light"
-        android:text="11 12"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -218,15 +181,14 @@
 
     <TextView
         android:id="@+id/tv1Numero"
-        android:layout_width="174dp"
+        android:layout_width="200dp"
         android:layout_height="35dp"
         android:background="@android:color/system_accent1_100"
-        android:text="0102030405"
         android:textColor="@color/material_dynamic_neutral_variant20"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintHorizontal_bias="0.227"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.912"
@@ -241,10 +203,10 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tv1Numero"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.916" />
+        app:layout_constraintVertical_bias="0.918" />
 
     <Button
         android:id="@+id/btnElegirNum"
@@ -439,7 +401,7 @@
         android:id="@+id/imb03"
         android:layout_width="69dp"
         android:layout_height="60dp"
-        android:backgroundTint="#018786"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
         android:onClick="agregarNumero"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -455,6 +417,7 @@
         android:layout_width="69dp"
         android:layout_height="60dp"
         android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -469,6 +432,7 @@
         android:layout_width="69dp"
         android:layout_height="60dp"
         android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -784,6 +748,7 @@
         android:id="@+id/imb30"
         android:layout_width="69dp"
         android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
         android:onClick="agregarNumero"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -798,6 +763,7 @@
         android:id="@+id/imb32"
         android:layout_width="69dp"
         android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
         android:onClick="agregarNumero"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -812,6 +778,7 @@
         android:id="@+id/imb33"
         android:layout_width="69dp"
         android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -825,6 +792,7 @@
         android:id="@+id/imb34"
         android:layout_width="69dp"
         android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
         android:onClick="agregarNumero"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -839,6 +807,7 @@
         android:id="@+id/imb35"
         android:layout_width="69dp"
         android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
         android:onClick="agregarNumero"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -853,6 +822,7 @@
         android:id="@+id/imb37"
         android:layout_width="69dp"
         android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
         android:onClick="agregarNumero"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -867,6 +837,7 @@
         android:id="@+id/imb39"
         android:layout_width="69dp"
         android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
         android:onClick="agregarNumero"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -881,10 +852,12 @@
         android:id="@+id/imb38"
         android:layout_width="69dp"
         android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.56"
@@ -894,6 +867,8 @@
         android:id="@+id/imb40"
         android:layout_width="69dp"
         android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -904,13 +879,15 @@
         app:srcCompat="@drawable/bola40" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/imb43"
         android:layout_width="69dp"
         android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.64"
@@ -920,10 +897,12 @@
         android:id="@+id/imb42"
         android:layout_width="69dp"
         android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintHorizontal_bias="0.269"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.64"
@@ -933,13 +912,90 @@
         android:id="@+id/imb44"
         android:layout_width="69dp"
         android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintHorizontal_bias="0.672"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.64"
         app:srcCompat="@drawable/bola44" />
+
+    <ImageButton
+        android:id="@+id/imb45"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64"
+        app:srcCompat="@drawable/bola45" />
+
+    <ImageButton
+        android:id="@+id/imb47"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.719"
+        app:srcCompat="@drawable/bola47" />
+
+    <ImageButton
+        android:id="@+id/imb49"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.719"
+        app:srcCompat="@drawable/bola49" />
+
+    <ImageButton
+        android:id="@+id/imb48"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.719"
+        app:srcCompat="@drawable/bola48" />
+
+    <ImageButton
+        android:id="@+id/imb50"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.719"
+        app:srcCompat="@drawable/bola50" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

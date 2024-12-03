@@ -17,10 +17,10 @@
         app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.334" />
+        app:layout_constraintVertical_bias="0.174" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnVerGanador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="VER NÚMERO GANADOR"
@@ -32,10 +32,11 @@
         app:layout_constraintVertical_bias="0.821" />
 
     <TextView
-        android:id="@+id/tvNumerosR3"
-        android:layout_width="175dp"
+        android:id="@+id/tvNumGanador"
+        android:layout_width="200dp"
         android:layout_height="45dp"
-        android:text="0102030405"
+        android:background="#DAF2BF"
+        android:text="01 02 03 04 05"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -58,5 +59,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.922" />
+
+    <TextView
+        android:id="@+id/tvStarWin"
+        android:layout_width="77dp"
+        android:layout_height="45dp"
+        android:text="01 02"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

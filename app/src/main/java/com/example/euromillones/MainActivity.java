@@ -72,11 +72,33 @@ public class MainActivity extends AppCompatActivity {
         imb26 = findViewById(R.id.imb26);
         imb27 = findViewById(R.id.imb27);
         imb28 = findViewById(R.id.imb28);
+        imb29 = findViewById(R.id.imb29);
+        imb30 = findViewById(R.id.imb30);
+        imb31 = findViewById(R.id.imb31);
+        imb32 = findViewById(R.id.imb32);
+        imb33 = findViewById(R.id.imb33);
+        imb34 = findViewById(R.id.imb34);
+        imb35 = findViewById(R.id.imb35);
+        imb36 = findViewById(R.id.imb36);
+        imb37 = findViewById(R.id.imb37);
+        imb38 = findViewById(R.id.imb38);
+        imb39 = findViewById(R.id.imb39);
+        imb40 = findViewById(R.id.imb40);
+        imb41 = findViewById(R.id.imb41);
+        imb42 = findViewById(R.id.imb42);
+        imb43 = findViewById(R.id.imb43);
+        imb44 = findViewById(R.id.imb44);
+        imb45 = findViewById(R.id.imb45);
+        imb46 = findViewById(R.id.imb46);
+        imb47 = findViewById(R.id.imb47);
+        imb48 = findViewById(R.id.imb48);
+        imb49 = findViewById(R.id.imb49);
+        imb50 = findViewById(R.id.imb50);
 
 
         //imagebutton estrellas
-        imbStar1 = findViewById(R.id.imbStar1);
-        imbStar2 = findViewById(R.id.imbStar2);
+       /* imbStar1 = findViewById(R.id.imbStar1);
+        imbStar2 = findViewById(R.id.imbStar2);*/
 
         // TEXTVIEW
         tv1Numero = findViewById(R.id.tv1Numero);
@@ -111,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
         String textoActual = tvNumero.getText().toString();
 
         if (!textoActual.contains(numero)) { // Evitar duplicados
-            tvNumero.setText(textoActual.isEmpty() ? numero : textoActual + ", " + numero);
+            tvNumero.setText(textoActual.isEmpty() ? numero : textoActual + " " + numero);
         }
 
         // Cambiar backgroundTint del botón presionado
