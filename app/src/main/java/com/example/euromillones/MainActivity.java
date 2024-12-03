@@ -10,6 +10,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.graphics.Color;
 import android.widget.TextView;
@@ -17,6 +18,17 @@ import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
+
+    // todos los elementos que hay que declarar
+    // TEXTVIEW
+    private TextView tv1Numero;
+
+    // IMAGEBUTTON
+    private ImageButton imb01, imb02, imb03;
+
+    //BUTTON
+    private Button btnElegirNum;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,13 +53,13 @@ public class MainActivity extends AppCompatActivity {
         String resourceName = getResources().getResourceEntryName(id);
 
         // sacar el numero
-        String numero = resourceName.replaceAll("\\D", ""); // Elimina todo excepto los dígitos
+        String numero = resourceName.replaceAll("\\D", "");
 
-        // Actualizar el TextView con el número
+        // Escribir en el TextView donde se muestra el número elegido
         TextView tvNumero = findViewById(R.id.tv1Numero);
         tvNumero.setText(numero);
 
-        // Cambiar el color de fondo del botón presionado
+        // Cambiar backgroundTint
         view.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#018786")));
     }
 }
