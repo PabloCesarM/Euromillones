@@ -456,7 +456,7 @@
         app:srcCompat="@drawable/bola21" />
 
     <ImageButton
-        android:id="@+id/imageButton13"
+        android:id="@+id/imb26"
         android:layout_width="69dp"
         android:layout_height="60dp"
         android:scaleType="centerCrop"
@@ -469,7 +469,7 @@
         app:srcCompat="@drawable/bola26" />
 
     <ImageButton
-        android:id="@+id/imageButton14"
+        android:id="@+id/imb31"
         android:layout_width="69dp"
         android:layout_height="60dp"
         android:scaleType="centerCrop"
@@ -638,7 +638,7 @@
         app:srcCompat="@drawable/bola22" />
 
     <ImageButton
-        android:id="@+id/imageButton32"
+        android:id="@+id/imb23"
         android:layout_width="69dp"
         android:layout_height="60dp"
         android:scaleType="centerCrop"
@@ -677,29 +677,29 @@
         app:srcCompat="@drawable/bola25" />
 
     <ImageButton
-        android:id="@+id/imb27"
-        android:layout_width="69dp"
-        android:layout_height="60dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.26"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39"
-        app:srcCompat="@drawable/bola27" />
-
-    <ImageButton
         android:id="@+id/imb28"
         android:layout_width="69dp"
         android:layout_height="60dp"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.39"
         app:srcCompat="@drawable/bola28" />
+
+    <ImageButton
+        android:id="@+id/imb27"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39"
+        app:srcCompat="@drawable/bola27" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
