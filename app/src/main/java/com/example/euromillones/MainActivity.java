@@ -1,6 +1,7 @@
 package com.example.euromillones;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.os.Bundle;
 
@@ -12,6 +13,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.graphics.Color;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 
 
@@ -115,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
         view.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#018786")));
     }
 
-    private void borrar() {
+    public void borrar( View view) {
         tv1Numero.setText("");
         /*for (ImageButton button : numberButtons) {
             button.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#018786")));
@@ -123,5 +126,11 @@ public class MainActivity extends AppCompatActivity {
 
         tv2Reintegro.setText("");
 
+    }
+
+    public void misBoletos( View view) {
+        // Intent para abrir la actividad MisBoletos
+        Intent intent = new Intent(this, PBoletos.class);
+        startActivity(intent);
     }
 }
