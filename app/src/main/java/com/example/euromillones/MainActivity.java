@@ -146,7 +146,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void borrar( View view) {
         tv1Numero.setText("");
-
         // Cambiar backgroundTint de los botones
         for (int i = 1; i <= 50; i++) {
             if (i < 10) {
@@ -155,9 +154,7 @@ public class MainActivity extends AppCompatActivity {
                 findViewById(getResources().getIdentifier("imb" + i, "id", getPackageName())).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#CAC1EA")));
             }
         }
-
         tv2Reintegro.setText("");
-
     }
 
     public void misBoletos( View view) {

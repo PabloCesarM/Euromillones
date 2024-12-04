@@ -12,7 +12,7 @@ public class PBoletos extends AppCompatActivity {
 
 
     private Button btnComprar, btnVerGanador;
-    private TextView tvNumGanador, tvStarWin;
+    private TextView tvBoleto, tvNumGanador, tvStarWin;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -23,6 +23,7 @@ public class PBoletos extends AppCompatActivity {
         btnComprar = findViewById(R.id.btnComprar);
         btnVerGanador = findViewById(R.id.btnVerGanador);
 
+        tvBoleto = findViewById(R.id.tvBoleto);
         tvNumGanador = findViewById(R.id.tvNumGanador);
         tvStarWin = findViewById(R.id.tvStarWin);
     }
@@ -53,6 +54,9 @@ public class PBoletos extends AppCompatActivity {
         }
         tvStarWin.setText(String.valueOf(estrellasPremiadas[0]) + " " + String.valueOf(estrellasPremiadas[1]));
     }
+
+
+
 
 
 
