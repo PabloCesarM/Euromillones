@@ -33,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
     //BUTTON
     private Button btnElegirNum, btnBorrar, btnMisBoletos;
 
+    private int[] numeros = new int[5];
+    //private int[] estrellas = new int[2];
+    private int contadorNumeros = 0;
+
 
     @SuppressLint({"WrongViewCast", "MissingInflatedId"})
     @Override
@@ -111,15 +115,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void agregarNumero(View view, TextView tv1Nero) {
+    public void agregarNumero(View view) {
         // Obtener el ID del ImageButton pulsado
         int id = view.getId();
-        int contadorNumeros = 0;
 
-        // Extraer el nombre del recurso del ID
+        // Extraer el nombre del imageButton del ID
         String resourceName = getResources().getResourceEntryName(id);
 
-        // Obtener el número del nombre del recurso
+        // Obtener el número del nombre del imageButton
         String numero = resourceName.replaceAll("\\D", "");
 
         // Actualizar el TextView con el número elegido
@@ -128,28 +131,19 @@ public class MainActivity extends AppCompatActivity {
 
         if (!textoActual.contains(numero) && contadorNumeros < 5) { // Evitar duplicados
             tvNumero.setText(textoActual.isEmpty() ? numero : textoActual + " " + numero);
+            numeros[contadorNumeros] = Integer.parseInt(numero);
             contadorNumeros++;
 
             // Cambiar backgroundTint del botón presionado
             view.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#018786")));
-            //agregar el numero al array
-            int[] numeros = new int[5];
-            numeros[contadorNumeros - 1] = Integer.parseInt(tv1Numero.getText().toString());
 
-    //quiero que se guarde el numero que se escribe en en array y pasar ese array a la clase boleto
-            //para pasar el array a la nueva clase con el inten es
-
-            Intent intent = new Intent(this, PBoletos.class);
-
-// Agregar el array al Intent usando putExtra
-            intent.putExtra("array_entero", numeros);//con el put le pasas el array a la nueva clase pero claro tienes que tener el Intent donde lo quieras meter
-
-// Iniciar la segunda actividad
-            startActivity(intent);
-
+            if (contadorNumeros == 5) {
+                Intent intent = new Intent(this, PBoletos.class);
+                intent.putExtra("arrayNumBoleto", numeros);
+                startActivity(intent);
+            }
 
         }
-
     }
 
     public void borrar(View view) {
@@ -171,75 +165,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    // Función para que se guarde el boleto
-    public void comprarBoleto(View view) {
-        String boleto = tv1Numero.getText().toString();
-        String reintegro = tv2Reintegro.getText().toString();
 
 
-        // Guardar el boleto en un array
-        ArrayList<String> boletos = new ArrayList<>();
-        boletos.add(boleto);
-
-        boletos.add(reintegro);
-
-        // Limpiar los TextView
-        tv1Numero.setText("");
-        tv2Reintegro.setText("");
-
-        // Cambiar backgroundTint de los botones
-        for (int i = 1; i <= 50; i++) {
-            if (i < 10) {
-                findViewById(getResources().getIdentifier("imb0" + i, "id", getPackageName())).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#CAC1EA")));
-            } else {
-                findViewById(getResources().getIdentifier("imb" + i, "id", getPackageName())).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#CAC1EA")));
-            }
-        }
-        // Intent para abrir la actividad MisBoletos
-        Intent intent = new Intent(this, PBoletos.class);
-        startActivity(intent);
-
-    }
-
-    ///////////////////
-    ///////////////////
-    private int[] selectedNumbers = new int[5];
-
-    public void addButtonToSelection(String numberString) {
-        // Convertir el String a int
-        int number;
-        try {
-            number = Integer.parseInt(numberString);
-        } catch (NumberFormatException e) {
-            // Si no se puede convertir el String a int, mostramos un mensaje de error
-            Toast.makeText(this, "Número inválido", Toast.LENGTH_SHORT).show();
-            return;
-        }
-
-        // Buscamos la primera posición disponible en el array
-        for (int i = 0; i < selectedNumbers.length; i++) {
-            if (selectedNumbers[i] == 0) {
-                // Agregamos el número a la posición disponible
-                selectedNumbers[i] = number;
-                break;
-            }
-        }
-
-        // Si el array está lleno, mostramos un mensaje
-        if (isArrayFull()) {
-            Toast.makeText(this, "No se pueden agregar más de 5 números", Toast.LENGTH_SHORT).show();
-        }
-    }
-
-    private boolean isArrayFull() {
-        for (int number : selectedNumbers) {
-            if (number == 0) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    ///////////////////
-    ///////////////////
 }

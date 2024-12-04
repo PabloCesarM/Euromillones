@@ -9,15 +9,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class PInicial extends AppCompatActivity {
 
-    private Button btnComprar, btnComprobar;
+    private Button btnComprar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.p_inicial);
 
-        btnComprar = findViewById(R.id.btnComprar);
-        btnComprobar = findViewById(R.id.btnComprobar);
+        btnComprar = findViewById(R.id.btnComprar);;
     }
 
 
