@@ -779,6 +779,7 @@
         android:layout_width="69dp"
         android:layout_height="60dp"
         android:backgroundTint="@color/material_dynamic_tertiary80"
+        android:onClick="agregarNumero"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

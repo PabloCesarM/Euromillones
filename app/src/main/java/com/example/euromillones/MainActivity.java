@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
         // IMAGEBUTTON
         imb01 = findViewById(R.id.imb01);
         imb02 = findViewById(R.id.imb02);
@@ -121,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
     public void agregarNumero(View view) {
         // Obtener el ID del ImageButton pulsado
         int id = view.getId();
+        int contadorNumeros = 0;
 
         // Extraer el nombre del recurso del ID
         String resourceName = getResources().getResourceEntryName(id);
@@ -132,19 +132,28 @@ public class MainActivity extends AppCompatActivity {
         TextView tvNumero = findViewById(R.id.tv1Numero);
         String textoActual = tvNumero.getText().toString();
 
-        if (!textoActual.contains(numero)) { // Evitar duplicados
+        if (!textoActual.contains(numero) && contadorNumeros < 5) { // Evitar duplicados
             tvNumero.setText(textoActual.isEmpty() ? numero : textoActual + " " + numero);
+            contadorNumeros++;
+
+            // Cambiar backgroundTint del botón presionado
+            view.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#018786")));
         }
 
-        // Cambiar backgroundTint del botón presionado
-        view.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#018786")));
+
     }
 
     public void borrar( View view) {
         tv1Numero.setText("");
-        /*for (ImageButton button : numberButtons) {
-            button.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#018786")));
-        }*/
+
+        // Cambiar backgroundTint de los botones
+        for (int i = 1; i <= 50; i++) {
+            if (i < 10) {
+                findViewById(getResources().getIdentifier("imb0" + i, "id", getPackageName())).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#CAC1EA")));
+            }else {
+                findViewById(getResources().getIdentifier("imb" + i, "id", getPackageName())).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#CAC1EA")));
+            }
+        }
 
         tv2Reintegro.setText("");
 
@@ -154,5 +163,36 @@ public class MainActivity extends AppCompatActivity {
         // Intent para abrir la actividad MisBoletos
         Intent intent = new Intent(this, PBoletos.class);
         startActivity(intent);
+    }
+
+    // Función para que se guarde el boleto
+    public void guardarBoleto(View view) {
+        String boleto = tv1Numero.getText().toString();
+        String reintegro = tv2Reintegro.getText().toString();
+
+
+
+        // Guardar el boleto en un array
+        ArrayList<String> boletos = new ArrayList<>();
+        boletos.add(boleto);
+
+        boletos.add(reintegro);
+
+        // Limpiar los TextView
+        tv1Numero.setText("");
+        tv2Reintegro.setText("");
+
+        // Cambiar backgroundTint de los botones
+        for (int i = 1; i <= 50; i++) {
+            if (i < 10) {
+                findViewById(getResources().getIdentifier("imb0" + i, "id", getPackageName())).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#CAC1EA")));
+            }else {
+                findViewById(getResources().getIdentifier("imb" + i, "id", getPackageName())).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#CAC1EA")));
+            }
+        }
+        // Intent para abrir la actividad MisBoletos
+        Intent intent = new Intent(this, PBoletos.class);
+        startActivity(intent);
+
     }
 }
