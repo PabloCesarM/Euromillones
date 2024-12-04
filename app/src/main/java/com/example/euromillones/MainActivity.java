@@ -139,6 +139,9 @@ public class MainActivity extends AppCompatActivity {
 
             // Cambiar backgroundTint del botón presionado
             view.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#018786")));
+
+            // agregar el numero al array
+
         }
 
 
