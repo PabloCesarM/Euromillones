@@ -21,4 +21,6 @@ public class PBoletos extends AppCompatActivity {
         btnVerGanador = findViewById(R.id.btnVerGanador);
     }
 
+
 }
+
