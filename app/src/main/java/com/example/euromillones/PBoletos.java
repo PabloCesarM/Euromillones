@@ -2,6 +2,7 @@ package com.example.euromillones;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -37,7 +38,7 @@ public class PBoletos extends AppCompatActivity {
 
 
     // metodo para generar array de estrellas aleatorias entre 1 y 12
-    public void generarBoletoPremiado() {
+    public void generarBoletoPremiado(View view) {
         int[] numerosPremiados = new int[5];
         for (int i = 0; i < 5; i++) {
             numerosPremiados[i] = (int) Math.floor(Math.random() * 50 + 1);
