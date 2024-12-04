@@ -18,7 +18,6 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 
-
 public class MainActivity extends AppCompatActivity {
 
     // todos los elementos que hay que declarar
@@ -110,15 +109,9 @@ public class MainActivity extends AppCompatActivity {
         btnMisBoletos = findViewById(R.id.btnMisBoletos);
 
 
-
-
-
-
-
-
     }
 
-    public void agregarNumero(View view) {
+    public void agregarNumero(View view, TextView tv1Nero) {
         // Obtener el ID del ImageButton pulsado
         int id = view.getId();
         int contadorNumeros = 0;
@@ -139,29 +132,40 @@ public class MainActivity extends AppCompatActivity {
 
             // Cambiar backgroundTint del botón presionado
             view.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#018786")));
+            //agregar el numero al array
+            int[] numeros = new int[5];
+            numeros[contadorNumeros - 1] = Integer.parseInt(tv1Numero.getText().toString());
 
-            // agregar el numero al array
-            //numeros[contadorNumeros - 1] = Integer.parseInt(numero);
+    //quiero que se guarde el numero que se escribe en en array y pasar ese array a la clase boleto
+            //para pasar el array a la nueva clase con el inten es
+
+            Intent intent = new Intent(this, PBoletos.class);
+
+// Agregar el array al Intent usando putExtra
+            intent.putExtra("array_entero", numeros);//con el put le pasas el array a la nueva clase pero claro tienes que tener el Intent donde lo quieras meter
+
+// Iniciar la segunda actividad
+            startActivity(intent);
+
 
         }
 
-
     }
 
-    public void borrar( View view) {
+    public void borrar(View view) {
         tv1Numero.setText("");
         // Cambiar backgroundTint de los botones
         for (int i = 1; i <= 50; i++) {
             if (i < 10) {
                 findViewById(getResources().getIdentifier("imb0" + i, "id", getPackageName())).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#CAC1EA")));
-            }else {
+            } else {
                 findViewById(getResources().getIdentifier("imb" + i, "id", getPackageName())).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#CAC1EA")));
             }
         }
         tv2Reintegro.setText("");
     }
 
-    public void misBoletos( View view) {
+    public void misBoletos(View view) {
         // Intent para abrir la actividad MisBoletos
         Intent intent = new Intent(this, PBoletos.class);
         startActivity(intent);
@@ -171,7 +175,6 @@ public class MainActivity extends AppCompatActivity {
     public void comprarBoleto(View view) {
         String boleto = tv1Numero.getText().toString();
         String reintegro = tv2Reintegro.getText().toString();
-
 
 
         // Guardar el boleto en un array
@@ -188,7 +191,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 1; i <= 50; i++) {
             if (i < 10) {
                 findViewById(getResources().getIdentifier("imb0" + i, "id", getPackageName())).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#CAC1EA")));
-            }else {
+            } else {
                 findViewById(getResources().getIdentifier("imb" + i, "id", getPackageName())).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#CAC1EA")));
             }
         }

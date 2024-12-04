@@ -1,6 +1,7 @@
 package com.example.euromillones;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,6 +28,18 @@ public class PBoletos extends AppCompatActivity {
         tvNumGanador = findViewById(R.id.tvNumGanador);
         tvStarWin = findViewById(R.id.tvStarWin);
     }
+
+
+
+    //usar e
+
+    Intent intent = getIntent();
+
+    // Recuperar el array de enteros desde el Intent
+    int[] miArrayRecibido = intent.getIntArrayExtra("array_entero");
+
+    //imprime esto para ver si es lo que te tiene guardado el array!!!!!
+    //en un toast? o un textview asi rapido
 
 
     // metodo para generar numero aleatorio entre 1000000 y 50000
