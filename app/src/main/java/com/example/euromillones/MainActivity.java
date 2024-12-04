@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.graphics.Color;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -166,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Función para que se guarde el boleto
-    public void guardarBoleto(View view) {
+    public void comprarBoleto(View view) {
         String boleto = tv1Numero.getText().toString();
         String reintegro = tv2Reintegro.getText().toString();
 
@@ -195,4 +196,46 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    ///////////////////
+    ///////////////////
+    private int[] selectedNumbers = new int[5];
+
+    public void addButtonToSelection(String numberString) {
+        // Convertir el String a int
+        int number;
+        try {
+            number = Integer.parseInt(numberString);
+        } catch (NumberFormatException e) {
+            // Si no se puede convertir el String a int, mostramos un mensaje de error
+            Toast.makeText(this, "Número inválido", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Buscamos la primera posición disponible en el array
+        for (int i = 0; i < selectedNumbers.length; i++) {
+            if (selectedNumbers[i] == 0) {
+                // Agregamos el número a la posición disponible
+                selectedNumbers[i] = number;
+                break;
+            }
+        }
+
+        // Si el array está lleno, mostramos un mensaje
+        if (isArrayFull()) {
+            Toast.makeText(this, "No se pueden agregar más de 5 números", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private boolean isArrayFull() {
+        for (int number : selectedNumbers) {
+            if (number == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    ///////////////////
+    ///////////////////
 }
