@@ -141,6 +141,7 @@ public class MainActivity extends AppCompatActivity {
             view.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#018786")));
 
             // agregar el numero al array
+            //numeros[contadorNumeros - 1] = Integer.parseInt(numero);
 
         }
 
