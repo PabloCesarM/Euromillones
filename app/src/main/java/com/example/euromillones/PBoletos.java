@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class PBoletos extends AppCompatActivity {
 
 
-    private Button btnComprar, btnVerGanador;
+    private Button btnComprar;
     private TextView tvBoleto, tvNumGanador, tvStarWin, tvPremio;
 
     //private static TextView fondoPBoleto;
@@ -28,7 +28,7 @@ public class PBoletos extends AppCompatActivity {
         setContentView(R.layout.p_boletos);
 
         btnComprar = findViewById(R.id.btnComprar);
-        btnVerGanador = findViewById(R.id.btnVerGanador);
+
 
         tvBoleto = findViewById(R.id.tvBoleto);
         tvNumGanador = findViewById(R.id.tvNumGanador);
@@ -69,7 +69,27 @@ public class PBoletos extends AppCompatActivity {
 
         Intent intent = getIntent();
         int[] numerosArray = intent.getIntArrayExtra("arrayNumBoleto");
+        //int[] estrellasArray = intent.getIntArrayExtra("arrayEstrellasBoleto");
 
+        //boleto ganador
+        int[] numerosGanador = generarNumerosPremiados();
+        int[] estrellasGanador = generarEstrellasPremiadas();
+
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                if (numerosArray[i] == numerosGanador[j]) {
+                    numerosAcertados++;
+                }
+            }
+        }
+
+       /* for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                if (estrellasArray[i] == estrellasGanador[j]) {
+                    estrellasAcertadas++;
+                }
+            }
+        }*/
 
 
         if (numerosAcertados == 5 && estrellasAcertadas == 2) {
@@ -110,7 +130,7 @@ public class PBoletos extends AppCompatActivity {
 
 
     // metodo para generar array de estrellas aleatorias entre 1 y 12
-    public void generarBoletoPremiado(View view) {
+    public int[] generarNumerosPremiados() {
         int[] numerosPremiados = new int[5];
         for (int i = 0; i < 5; i++) {
             numerosPremiados[i] = (int) Math.floor(Math.random() * 50 + 1);
@@ -118,12 +138,15 @@ public class PBoletos extends AppCompatActivity {
         tvNumGanador.setText(String.valueOf(numerosPremiados[0]) + " " + String.valueOf(numerosPremiados[1]) + " "
                 + String.valueOf(numerosPremiados[2]) + " " + String.valueOf(numerosPremiados[3]) + " "
                 + String.valueOf(numerosPremiados[4]));
-
+        return numerosPremiados;
+    }
+    public int[] generarEstrellasPremiadas() {
         int[] estrellasPremiadas = new int[2];
         for (int i = 0; i < 2; i++) {
             estrellasPremiadas[i] = (int) Math.floor(Math.random() * 12 + 1);
         }
         tvStarWin.setText(String.valueOf(estrellasPremiadas[0]) + " " + String.valueOf(estrellasPremiadas[1]));
+        return estrellasPremiadas;
     }
 
 
