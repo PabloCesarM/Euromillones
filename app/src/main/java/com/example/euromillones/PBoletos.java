@@ -120,6 +120,7 @@ public class PBoletos extends AppCompatActivity {
 
 
         if (premio != 0) {
+            Math.floor(premio);
             tvPremio.setText("Enhorabuena has ganado " + String.valueOf(premio) + " euros");
         }else {
             tvPremio.setText("Lo sentimos, la proxima vez sera mejor");
